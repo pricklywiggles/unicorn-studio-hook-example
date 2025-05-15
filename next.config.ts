@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async headers() {
+    return [
+      {
+        // This applies to all routes
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Clacks-Overhead',
+            value: 'GNU Cassian Andor'
+          }
+        ]
+      }
+    ];
+  }
 };
 
 export default nextConfig;

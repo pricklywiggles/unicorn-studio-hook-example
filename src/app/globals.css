@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-neutral-bg: var(--color-slate-950);
+  --color-neutral-text: var(--color-zinc-100);
+  --font-sans: var(--font-montserrat);
+}
