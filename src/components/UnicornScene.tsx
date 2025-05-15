@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react';
 import { useUnicornStudio } from '../hooks/useUnicornStudio';
-import clsx from 'clsx';
 
 export type UnicornSceneProps = {
   jsonFilePath: string;
